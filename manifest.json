@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Schiz",
+  "icons": {
+    "32": "icons/putler32.png",
+    "48": "icons/putler48.png"
+  },
+  "version": "1.0.0",
+  "description": "Меняет 'Путин' на 'Шизоид'",
+  "author": "idk who is",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+      "activeTab",
+      "<all_urls>"
+  ],
+  "content_scripts": [
+      {
+          "matches": ["<all_urls>"],
+          "js": ["main.js"]
+      }
+  ]
+}
