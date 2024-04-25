@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "rules": [
+      {
+        "id": "numOne",
+        "priority": 0,
+        "action": {
+          "type": "block"
+        },
+        "condition": {
+          "urlFilter": ".*"
+        },
+        "permissions": [
+          "activeTab",
+          "tabs",
+          "webNavigation",
+          "declarativeNetRequest"
+        ]
+      }
+    ]
+  }
+  
